@@ -1,0 +1,27 @@
+# Environment
+.venv/
+venv/
+
+# Python bytecode
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# OS files
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Other
+*.env
+*.pcap
+#how.txt
+#descr.txt

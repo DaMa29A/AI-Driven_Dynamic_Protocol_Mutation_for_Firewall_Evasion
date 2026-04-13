@@ -1,0 +1,130 @@
+{
+    "input_file": "packets.pcap",
+    "total_packets": 6885,
+    "features": {
+        "packet_size": {
+            "stats": {
+                "count": 6885,
+                "min": 66,
+                "max": 1514,
+                "mean": 539.91,
+                "median": 74,
+                "stdev": 596.082
+            },
+            "top_values": [
+                {
+                    "value": 66,
+                    "count": 3100
+                },
+                {
+                    "value": 1514,
+                    "count": 1635
+                },
+                {
+                    "value": 74,
+                    "count": 506
+                },
+                {
+                    "value": 761,
+                    "count": 260
+                },
+                {
+                    "value": 509,
+                    "count": 80
+                },
+                {
+                    "value": 504,
+                    "count": 71
+                },
+                {
+                    "value": 473,
+                    "count": 44
+                },
+                {
+                    "value": 762,
+                    "count": 42
+                },
+                {
+                    "value": 549,
+                    "count": 32
+                },
+                {
+                    "value": 544,
+                    "count": 32
+                }
+            ]
+        },
+        "ttl": {
+            "stats": {
+                "count": 6885,
+                "min": 63,
+                "max": 64,
+                "mean": 63.642,
+                "median": 64,
+                "stdev": 0.48
+            },
+            "top_values": [
+                {
+                    "value": 64,
+                    "count": 4418
+                },
+                {
+                    "value": 63,
+                    "count": 2467
+                }
+            ]
+        },
+        "tcp_window_size": {
+            "stats": {
+                "count": 6885,
+                "min": 501,
+                "max": 65160,
+                "mean": 5571.123,
+                "median": 507,
+                "stdev": 16696.13
+            },
+            "top_values": [
+                {
+                    "value": 501,
+                    "count": 1416
+                },
+                {
+                    "value": 506,
+                    "count": 793
+                },
+                {
+                    "value": 507,
+                    "count": 673
+                },
+                {
+                    "value": 502,
+                    "count": 613
+                },
+                {
+                    "value": 514,
+                    "count": 380
+                },
+                {
+                    "value": 509,
+                    "count": 319
+                },
+                {
+                    "value": 504,
+                    "count": 293
+                },
+                {
+                    "value": 64240,
+                    "count": 253
+                },
+                {
+                    "value": 65160,
+                    "count": 253
+                },
+                {
+                    "value": 503,
+                    "count": 203
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+# Environment
+python -m venv .venv
+.venv\Scripts\activate  [Su linux -> source .venv/bin/activate]
+                        [which python       Deve puntare a .venv per assicurarti che è attivo]
+
+# Requirements
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+# Eseguire come amministratore il programma
+sudo .venv/bin/python main.py

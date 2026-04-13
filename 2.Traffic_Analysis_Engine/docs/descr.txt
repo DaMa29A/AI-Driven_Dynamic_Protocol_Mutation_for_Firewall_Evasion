@@ -1,0 +1,16 @@
+"""
+Legge un file PCAP, estrae statistiche baseline e salva tutto in JSON.
+"""
+
+Il Time to Live (TTL) è un meccanismo che limita la durata o la vita dei dati in 
+un computer o in una rete, utilizzato principalmente nei DNS e nei pacchetti IP 
+per evitare che girino all'infinito.
+Come funziona: Il mittente assegna al pacchetto un valore numerico (es. 64).
+Il decremento: Ogni volta che il pacchetto attraversa un router (un "salto"), il valore del TTL scende di 1.
+La fine: Se il TTL arriva a 0 prima di aver raggiunto la destinazione, il router distrugge il pacchetto e invia un messaggio di errore al mittente.
+
+Quando si parla di Window Size (dimensione della finestra) ci si riferisce solitamente 
+al protocollo TCP (Transmission Control Protocol). È il meccanismo che permette a due computer di accordarsi 
+su quanti dati possono essere inviati prima di fermarsi e aspettare una conferma (ACK).
+Il TCP è un protocollo affidabile: vuole essere sicuro che ogni pezzetto di informazione arrivi integro. 
+La Window Size serve a evitare che il mittente "allaghi" il destinatario con troppi dati che quest'ultimo non riesce a elaborare.

@@ -1,0 +1,11 @@
+"""
+Genera traffico baseline verso un server del lab usando:
+- curl
+- chrome headless
+
+Note:
+- pensato per un ambiente di laboratorio autorizzato
+- per HTTPS con certificato self-signed:
+  - curl usa -k
+  - chrome usa --ignore-certificate-errors
+"""
