@@ -10,7 +10,6 @@ Note:
   - chrome usa --ignore-certificate-errors
 """
 
-
 Quando catturi con pfsense metti:
 - LAN
 - Sotto Untagged Filter metti :
