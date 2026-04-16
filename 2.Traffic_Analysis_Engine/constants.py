@@ -6,5 +6,5 @@ BASE_DIR = Path(__file__).resolve().parent
 INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
 
-INPUT_PCAP = INPUT_DIR / "packets.pcap"
+INPUT_PCAP = INPUT_DIR / "capture.pcap"
 OUTPUT_JSON = OUTPUT_DIR / "baseline_stats.json"

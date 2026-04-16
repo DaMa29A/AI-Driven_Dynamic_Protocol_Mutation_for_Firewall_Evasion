@@ -1,0 +1,11 @@
+Per avviare progetto:
+sudo python3 ./4.\ Protocol_Mutation_Generator/main.py
+
+
+Avvio servizio ollama:
+systemctl status ollama
+sudo systemctl start ollama
+
+Per scaricare:
+ollama run llama3.1:8b
+ollama list
