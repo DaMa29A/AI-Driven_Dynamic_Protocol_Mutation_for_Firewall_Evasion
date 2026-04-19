@@ -1,12 +1,12 @@
 import json
 import re
-from openai import OpenAI
 import requests
 
 class LLMEvasionStrategyEngine:
     def __init__(self, baseline_json_path, model="llama3.1:8b", ollama_url="http://localhost:11434/api/generate"):
         self.model = model
-        self.ollama_url = ollama_url
+        #self.ollama_url = ollama_url
+        self.ollama_url="http://192.168.98.1:11434/api/generate"
         self.history = []
         
         with open(baseline_json_path, "r") as f:

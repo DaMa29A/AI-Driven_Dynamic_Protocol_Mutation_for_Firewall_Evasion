@@ -22,6 +22,6 @@ __pycache__/
 
 # Other
 *.env
-*.pcap
+#*.pcap
 #how.txt
 #descr.txt

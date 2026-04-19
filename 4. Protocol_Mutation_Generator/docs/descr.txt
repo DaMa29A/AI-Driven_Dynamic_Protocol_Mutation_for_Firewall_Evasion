@@ -1,5 +1,6 @@
 Per avviare progetto:
 sudo python3 ./4.\ Protocol_Mutation_Generator/main.py
+sudo python3 ./4.\ Protocol_Mutation_Generator/execution.py
 
 
 Avvio servizio ollama:
