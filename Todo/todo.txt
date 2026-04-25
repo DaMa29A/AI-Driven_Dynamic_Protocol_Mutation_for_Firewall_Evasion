@@ -1,0 +1,18 @@
+#################### Traffic Analysis engine #################### 
+aggiungi nel JSON anche un riepilogo direzionale:
+Kali → Mint
+Mint → Kali
+
+per non mescolare TTL/window/timing dei due host.
+
+aggiungi IP e porte principali, perché serviranno al prossimo modulo:
+src_ip
+dst_ip
+src_port
+dst_port
+protocol
+
+aggiungere metodi GET/HEAD, status code, path, User-Agent se possibile
+
+#################### - #################### 
+

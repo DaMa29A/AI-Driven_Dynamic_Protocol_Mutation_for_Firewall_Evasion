@@ -1,0 +1,74 @@
+[
+    {
+        "iteration": 1,
+        "timestamp": "2026-04-25T19:19:25.145487",
+        "strategy": {
+            "strategy_id": "PFSENSE_ATTACK_001",
+            "http": {
+                "method": "GET",
+                "path": "/index.html?param3=value3&param4=value4",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                }
+            },
+            "packet": {
+                "ttl": 65,
+                "tcp_window": 65000
+            },
+            "reason": "Ho scelto un TTL più alto rispetto al valore medio (63,52) per aumentare le possibilità di superamento del firewall. Inoltre, ho impostato il TCP_WINDOW a 65000, che è vicino al massimo raggiunto nel baseline (65160), per simulare una connessione con un grande buffer."
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 200"
+        }
+    },
+    {
+        "iteration": 2,
+        "timestamp": "2026-04-25T19:20:28.441209",
+        "strategy": {
+            "strategy_id": "nuova_strategia_1",
+            "http": {
+                "method": "GET",
+                "path": "/index.html?param3=value3&param4=value4",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                }
+            },
+            "packet": {
+                "ttl": 66,
+                "tcp_window": 65000
+            },
+            "reason": "Ho scelto di mantenere lo stesso User-Agent per non suscitare sospetti, ma ho aumentato il TTL a 66 per evitare una possibile configurazione predefinita del firewall. Ho anche lasciato invariata la dimensione della finestra TCP a 65000 poiché è un valore abbastanza comune."
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 200"
+        }
+    },
+    {
+        "iteration": 3,
+        "timestamp": "2026-04-25T19:21:27.416560",
+        "strategy": {
+            "strategy_id": "strategia_1",
+            "http": {
+                "method": "GET",
+                "path": "/index.html?param3=value3&param4=value4",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                }
+            },
+            "packet": {
+                "ttl": 74,
+                "tcp_window": 65000
+            },
+            "reason": "Ho scelto una TTL di 74 perché è il valore più comune nel baseline e potrebbe essere considerato come un comportamento normale. Inoltre, ho mantenuto la stessa TCP window del feedback precedente per non alterare troppo i dati."
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 200"
+        }
+    }
+]

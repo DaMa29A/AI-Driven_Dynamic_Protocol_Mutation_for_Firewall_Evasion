@@ -1,0 +1,15 @@
+{
+    "strategy_id": "strategia_1",
+    "http": {
+        "method": "GET",
+        "path": "/index.html?param3=value3&param4=value4",
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+        }
+    },
+    "packet": {
+        "ttl": 74,
+        "tcp_window": 65000
+    },
+    "reason": "Ho scelto una TTL di 74 perché è il valore più comune nel baseline e potrebbe essere considerato come un comportamento normale. Inoltre, ho mantenuto la stessa TCP window del feedback precedente per non alterare troppo i dati."
+}

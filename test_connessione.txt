@@ -1,0 +1,21 @@
+Su Kali:
+ip route        deve risultare: default via 192.168.10.1
+
+test Kali → firewall
+ping 192.168.10.1
+
+test Kali → target
+ping 192.168.20.10
+Se pfSense non blocca, il ping deve passare.
+
+
+#############################OLLAMA#############################
+Ping verso window:
+ping -c1 192.168.98.1
+
+Per ollama su win:
+$env:OLLAMA_HOST="0.0.0.0:11434"
+ollama serve
+
+Poi qui:
+curl http://192.168.98.1:11434/api/tags
