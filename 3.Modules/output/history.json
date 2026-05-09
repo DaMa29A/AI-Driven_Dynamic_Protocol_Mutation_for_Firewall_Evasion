@@ -1,0 +1,173 @@
+[
+    {
+        "iteration": 1,
+        "timestamp": "2026-04-27T15:58:47.467536+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/login.php",
+                "headers": {
+                    "User-Agent": ""
+                }
+            },
+            "reason": "Ho scelto un User-Agent per desktop in stile Chrome perchè è comune e poco sospetto."
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 404"
+        }
+    },
+    {
+        "iteration": 2,
+        "timestamp": "2026-04-27T15:59:18.077820+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/login",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.9 Mobile Safari/604.1"
+                }
+            },
+            "reason": "Ho scelto di utilizzare un agente utente per browser mobile perché è meno sospetto rispetto a quello desktop e non attira l'attenzione del firewall."
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 404"
+        }
+    },
+    {
+        "iteration": 3,
+        "timestamp": "2026-04-27T16:00:00.350673+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/",
+                "headers": {
+                    "User-Agent": ""
+                }
+            },
+            "reason": "Ho scelto un User-Agent che simula una richiesta GET a pagina HTML utilizzando il client CLI curl, versione 7.64.0 con specificazione del sistema operativo e delle librerie in modo da sembrare legittimo"
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 200"
+        }
+    },
+    {
+        "iteration": 4,
+        "timestamp": "2026-04-27T16:00:27.370113+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/login",
+                "headers": {
+                    "User-Agent": ""
+                }
+            },
+            "reason": ""
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 404"
+        }
+    },
+    {
+        "iteration": 5,
+        "timestamp": "2026-04-27T16:01:35.327765+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/login?response_type=token&redirect_uri=https://example.com/callback",
+                "headers": {
+                    "User-Agent": ""
+                }
+            },
+            "reason": "+ Il nuovo User-Agent è stato scelto per imitare un browser desktop, in particolare Google Chrome. Ciò è dovuto alla presenza di una serie di caratteristiche comuni a molti browser moderni che potrebbero essere utilizzate come trucchi da parte degli attacanti.\n+\t- La stringa dell'User-Agent include 'Google', il quale eò un indicatore chiaro per identificare l'appartenenza al gruppo di Google Chrome. Ciò aiuta a distinguere gli accessi legittimi, che spesso includono queste informazioni nel loro User Agent.\n+\t- La presenza del codice 'Linux' potrebbe essere una trappola perché molti sistemi moderni utilizzano Linux come base e quindi sembrerà un browser desktop. Ciò aiuta a ingannare il firewall in modo da farlo accettarlo."
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 404"
+        }
+    },
+    {
+        "iteration": 6,
+        "timestamp": "2026-04-27T16:02:05.897537+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/login",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.3"
+                }
+            },
+            "reason": "Ho scelto un User-Agent di tipo browser desktop per testare la vulnerabilità del firewall verso gli accessi da dispositivi Windows con il browser Google Chrome."
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 404"
+        }
+    },
+    {
+        "iteration": 7,
+        "timestamp": "2026-04-27T16:03:09.960687+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/api/login",
+                "headers": {
+                    "User-Agent": "curl/7.64.0 (x86_64-redhat-linux-gnu) libcurl/10.9.1 zlib/1.2.11 c-ares/3.4.6 NSS/5.8 modnss/20190908"
+                }
+            },
+            "reason": "Ho scelto un User-Agent simile a quello di curl per diversi motivi: (a) è un client CLI, quindi non ha le stesse caratteristiche dei browser desktop o mobile; (b) utilizza una versione vecchia del protocollo HTTP ('POST' anziché 'GET'), che potrebbe essere considerata sospetta da parte di alcuni firewall. Questo renderebbe più difficile per il sistema identificare l'intento dell'utilizzo e quindi aumenta le possibilità di bypassarlo."
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 404"
+        }
+    },
+    {
+        "iteration": 8,
+        "timestamp": "2026-04-27T16:03:52.438865+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/login",
+                "headers": {
+                    "User-Agent": ""
+                }
+            },
+            "reason": ""
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 404"
+        }
+    },
+    {
+        "iteration": 9,
+        "timestamp": "2026-04-27T16:04:25.715457+00:00",
+        "strategy": {
+            "http": {
+                "method": "GET",
+                "path": "/login",
+                "headers": {
+                    "User-Agent": ""
+                }
+            },
+            "reason": ""
+        },
+        "feedback": {
+            "verdict": "PASS",
+            "reward": 1.0,
+            "reason": "HTTP status 404"
+        }
+    }
+]

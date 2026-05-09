@@ -1,20 +1,13 @@
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 INPUT_DIR = BASE_DIR / "input"
-OUTPUT_DIR = BASE_DIR / "output"
-DATA_DIR = BASE_DIR / "data"
-
 BASELINE_JSON = INPUT_DIR / "baseline_stats.json"
-OUTPUT_STRATEGY_JSON = OUTPUT_DIR / "strategy.json"
-LAST_FEEDBACK_JSON = OUTPUT_DIR / "last_feedback.json"
-HISTORY_JSON = OUTPUT_DIR / "history.json"
 
 OLLAMA_URL = "http://192.168.98.1:11434/api/generate"
+OLLAMA_BASE_URL = "http://192.168.98.1:11434"
 OLLAMA_MODEL = "llama3.1:8b"
 #OLLAMA_MODEL = "llama3.2:3b"
-#OLLAMA_MODEL = "qwen2.5:7b-instruct"
 
 TARGET_IP = "192.168.20.10"
 BASE_URL = f"http://{TARGET_IP}"

@@ -6,5 +6,6 @@
             "User-Agent": ""
         }
     },
-    "reason": ""
+    "packet": null,
+    "result": "Esito: PASS - HTTP status 404"
 }
